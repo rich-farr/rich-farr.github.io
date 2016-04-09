@@ -1,0 +1,43 @@
+body {
+  background: #999;
+  font-family: arial;
+}
+
+.col {
+  background: black;
+  margin: 10px 20%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1, h2, p {
+  color:white;
+  margin: 0;
+  padding:5px 0;
+}
+
+a {
+  color:#999;
+}
+
+nav ul {
+/*   background: yellow;
+ */  
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+/*   background: red;  
+ */ 
+  display:inline-block;
+  list-style-type: none;
+  margin: 0 2px 0 0;
+  padding: 5px 0 0 0;
+}
+
+footer {
+  margin: 0;
+  font-size: 12px;
+}
+
