@@ -21,7 +21,7 @@ img {
   margin: 20px 10%;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, li {
   color:white;
   margin: 0;
   padding:5px 0;
@@ -34,8 +34,13 @@ div.col {
   border-radius: 5px;
 }
 
-div.col p {
+div.col p, li {
   color: #0d2c40;
+}
+
+div.col li {
+  margin: 0;
+  padding: 0;
 }
 
 header.col {
