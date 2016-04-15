@@ -57,8 +57,12 @@ header.col {
   border-radius: 5px;
 }
 
-a {
+header.col a {
   color:#999;
+}
+
+div.col a {
+  color:#dddddd;
 }
 
 nav ul {
