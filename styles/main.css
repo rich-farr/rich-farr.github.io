@@ -2,7 +2,48 @@
   border: 1px solid red;
 }
 
+.column.columns. {
+  width: auto;
+  min-width:1.2em;
+  float: left;
+  height: 100%;
+}
 
-/* .blog {
-  width:100%;
+#rotate {
+  display:inline-block;
+  padding-right:0.25em;
+  margin-right:-999px;
+  transform-origin: top left;
+  transform: rotate(-90deg) translate(-100%);
+}
+
+.column.columns {
+  float:left;
+}
+
+.footer {
+  float: left;
+}
+
+/* .two.columns.header {
+  position:static;
+  z-index: -1;
+}
+ */
+/* #rotate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: right; */
+     /* -moz-transform: rotate(-90.0deg);  /* FF3.5+ */ */
+       /* -o-transform: rotate(-90.0deg);  /* Opera 10.5 */ */
+  /* -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */ */
+             /* filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */ */
+         /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */ */
+ /*         word-wrap: break-word;
+         width: 100%;
+         height: 100%;
+
+         z-index: 1;
+
 } */
