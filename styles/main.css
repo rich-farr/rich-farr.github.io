@@ -88,6 +88,7 @@ a {
 .nine.columns.content {
   background: #31c5da;
   color: #0d2c40;
+  padding-top: 1em;
 }
 
 .twelve.columns.footer {
@@ -96,7 +97,7 @@ a {
   padding: 1em;
 }
 
-.three.columns.links {
+.three.columns.sidebar{
   background: #f15a30;
 }
 
@@ -114,29 +115,20 @@ a {
 
 .link {
   padding: .5em;
-  text-align: right;
 }
 
-.link:nth-of-type(1) {
+.link:nth-of-type(1n+0) {
   background: #f15a30;
 }
 
-.link:nth-of-type(2) {
+.link:nth-of-type(2n+0) {
   background: #0d2c40;
 }
 
-.link:nth-of-type(3) {
-  background: #f15a30;
+.link:nth-of-type(3n+0) {
+  background: #c879b2;
 }
 
-
-/* .image {
-  position: relative;
+.link:nth-of-type(4n+0) {
+  background: #31c5da;
 }
-
-.image h4 {
-  position:absolute;
-  top: 5em;
-  left: 0;
-  width: 100%;
-} */
