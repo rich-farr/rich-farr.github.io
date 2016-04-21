@@ -1,7 +1,16 @@
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   transition-property: all;
-  transition-duration: 300ms;
+  transition-duration: 500ms;
+}
+
+body {
+  background: #c879b2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
 }
 
 @media (min-width: 750px) {
@@ -11,7 +20,7 @@
     left: -.5em;
     top: 0;
     transform-origin: top left;
-    transform: rotate(-90deg) translate(-100%);
+    transform: rotate(-90deg) translate(-101%);
   }
 
   #rotate h1, h6 {
@@ -23,3 +32,25 @@
   }
 
 }
+
+.blogs, .content {
+  margin: 2em 0;
+}
+
+.section.blogs img {
+  border-style: solid;
+  border-width: .3em;
+  border-color: #fff;
+  border-radius: 25%;
+}
+
+/* .image {
+  position: relative;
+}
+
+.image h4 {
+  position:absolute;
+  top: 5em;
+  left: 0;
+  width: 100%;
+} */
