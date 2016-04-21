@@ -15,9 +15,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pacifico', cursive;
   color: #fff;
-}
- 
-h1, h6 {
   text-align: center;
   text-shadow: 2px 2px 8px #000;
 }
