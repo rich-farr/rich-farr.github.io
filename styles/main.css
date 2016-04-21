@@ -8,19 +8,38 @@ body {
   background: #c879b2;
 }
 
+.row {
+  display: block;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pacifico', cursive;
   color: #fff;
+}
+ 
+h1, h6 {
+  text-align: center;
+  text-shadow: 2px 2px 8px #000;
+}
+
+a {
+  color: #fff;
+}
+
+.one-third.column {
+  padding: 1em;
+  margin: 0;
+  /* width: 50%; */
 }
 
 @media (min-width: 750px) {
 
   #rotate {
     position: fixed;
-    left: -.5em;
+    left: -.1em;
     top: 0;
     transform-origin: top left;
-    transform: rotate(-90deg) translate(-101%);
+    transform: rotate(-90deg) translate(-102%);
   }
 
   #rotate h1, h6 {
@@ -31,10 +50,24 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
   }
 
+  .one-third.column {
+    width: 33.33333333333%;
+  }
+
+  .nine.columns {
+    width: 75%;
+    margin: 0;
+  }
+
+  .three.columns {
+    width: 25%;
+    margin: 0;
+  }
+
 }
 
 .blogs, .content {
-  padding: 2em;
+  padding: 0 2em;
 }
 
 .section.blogs img {
@@ -42,6 +75,14 @@ h1, h2, h3, h4, h5, h6 {
   border-width: .3em;
   border-color: #fff;
   border-radius: 25%;
+}
+
+.section.blogs {
+  padding: 0;
+}
+
+.section.blogs h5 {
+  text-align: center;
 }
 
 .nine.columns.content {
@@ -52,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .twelve.columns.footer {
   background: #0d2c40;
   color: #fff;
+  padding: 1em;
 }
 
 .three.columns.links {
@@ -62,9 +104,31 @@ h1, h2, h3, h4, h5, h6 {
   background: #31c5da;
 }
 
+.one-third.column:nth-of-type(2) {
+  background: #0d2c40;
+}
+
 .one-third.column:nth-of-type(3) {
   background: #f15a30;
 }
+
+.link {
+  padding: .5em;
+  text-align: right;
+}
+
+.link:nth-of-type(1) {
+  background: #f15a30;
+}
+
+.link:nth-of-type(2) {
+  background: #0d2c40;
+}
+
+.link:nth-of-type(3) {
+  background: #f15a30;
+}
+
 
 /* .image {
   position: relative;
