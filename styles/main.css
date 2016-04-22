@@ -1,15 +1,9 @@
 * {
   /* border: 1px solid red; */
-  transition-property: all;
-  transition-duration: 500ms;
 }
 
 body {
   background: #c879b2;
-}
-
-.row {
-  display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,6 +54,15 @@ a {
     margin: 0;
   }
 
+}
+
+#rotate, a {
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+#rotate {
+  z-index: 1;
 }
 
 .blogs, .content {
