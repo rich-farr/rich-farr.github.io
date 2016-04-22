@@ -109,6 +109,17 @@ a {
   background: #f15a30;
 }
 
+.one-third.column.images {
+  background: none;
+}
+
+.content img {
+  border-style: solid;
+  border-width: .3em;
+  border-color: #fff;
+  border-radius: 5%;
+}
+
 .link {
   padding: .5em;
 }
@@ -118,11 +129,11 @@ a {
 }
 
 .link:nth-of-type(2n+0) {
-  background: #0d2c40;
+  background: #c879b2;
 }
 
 .link:nth-of-type(3n+0) {
-  background: #c879b2;
+  background: #0d2c40;
 }
 
 .link:nth-of-type(4n+0) {
