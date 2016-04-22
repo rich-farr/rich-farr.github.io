@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rich's EDA Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns header">
+        <div id="rotate">
+          <h1>Rich Goes to EDA</h1>
+          <h6>A blog about code, self-actualisation, and failure.</h6>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="nine columns content">
+        <h3>April 22nd - Tech Blog Three, where Rich explains:</h3>
+        <h5>Responsive sites, 'Mobile First' design, and why these things are important</h5>
+        <p>
+          Responsive sites are built to display and work nicely on devices of any size, from phones right up to desktop PCs with huge monitors. They eliminate the need to develop and maintain separate mobile and desktop sites.
+        </p>
+        <p>
+          Mobile sites are increasingly important as more and more people primarily browse the web on mobile devices. Mobile First prioritises the mobile site during development. By doing this, you can ensure that a visitor will be able to interact with the site better and to see the information mostly likely to be relevant to them when they are out and about. Coding for mobile first also means that the code should be as lean as possible to avoid overtaxing the less powerful devices. This efficiency flows upward and benefits the larger versions of the site.
+        </p>
+        <h5>Frameworks, and the pros and cons of using them</h5>
+        <p>  
+          Frameworks are sets of pre-built stylesheets that a developer can use on their own site. They make building a new site much quicker than starting from scratch and writing all the code manually. The downside is that they can be restrictive and still require additional styling if the developer wants their new site to look and behave much differently to the framework.
+        </p>
+        <h5>Wireframes and why we use them</h5>
+        <p>
+          A wireframe is a mockup of a site that a design team will put together before the site is built. On paper they can be cut and pasted or drawn by hand. Specialised software can also be used. I drew them by hand:
+        </p>
+          <div class="one-third column images">
+            <img src="../images/collapsed_mobile_both.JPG" alt="Both mobile wireframes" class="u-max-full-width">
+          </div>            
+          <div class="one-third column images">
+            <img src="../images/12x12_index.JPG" alt="Full size index page" class="u-max-full-width">
+          </div>            
+          <div class="one-third column images">
+            <img src="../images/12x12_blog.JPG" alt="full size blog page" class="u-max-full-width">
+          </div>
+        <p>
+          It is a good way to visualise a site and where the boxes will go, making it easier to write the html. Like a blueprint, wireframes are also good as a reference point during construction.
+        </p>
+        <h5>Aspects of my wireframes that I found difficult to implement and why</h5>
+        <p>
+          I wanted to emulate a header section that rotates down from the top of the page and appears on its side when the screen is bigger than a certain size. It was supposed to be inside the main twelve column structure when it was rotated. Even though the header div stayed where I wanted it to, the actual heading text would not. I got around this by moving it completely outside the container and fixing it to the top left of the screen.
+        </p>
+        <p>
+          I also can't figure out how to get a box to render all the way down to the element beneath it, if there isn't enough content inside to push it that far. This is a problem that I'm keen to solve, because it seems to come up a lot.
+        </p>
+      </div>
+      <div class="three columns sidebar">
+          <div class="links">
+          <div class="link"><a href="../index.html">Home Page</a></div>
+          <div class="link"><a href="c1-reflection-blog.html">Reflection Blog</a></div>
+          <div class="link"><a href="c1-time-and-habits-blog.html">Time & Habits Blog</a></div>
+          <div class="link"><a href="t2-html-css-dom-p1.html">Tech Blog 1</a></div>
+          <div class="link"><a href="t2-html-css-dom-p2.html">Tech Blog 2</a></div>
+          <div class="link"><a href="c2-emotional-intelligence.html">EQ Blog</a></div>
+          <div class="link"><a href="#">Tech Blog 3</a></div>
+          <div class="link"><a href="c3-meditation-process.html">Meditation Blog</a></div>
+          </div>
+<!--           <div class="info">
+            <div><a href="#">About</a></div>
+            <div><a href="#">Contact</a></div>
+            <div><a href="#">Projects</a></div>
+            <div><a href="#">Links</a></div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns footer">
+        <p>
+          (c) FarrOut Design 2016
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
