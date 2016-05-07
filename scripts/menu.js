@@ -7,7 +7,7 @@ var blogs = [
             ['c2-emotional-intelligence', 'Emotional Intelligence'],
             ['t3-design-to-web-blog', 'Tech Blog 3'],
             ['c3-meditation-process', 'Meditation'],
-            ['t4-javascript-basics', 'Tech Blog 4'],
+            ['t4-javascript-basics', 'Javascript Basics'],
             ['c4-daily-mindfulness', 'Daily Mindfulness'],
             ['c5-self-confidence', 'Self Confidence'],
             ['t5-problem-solving', 'Problem Solving']
