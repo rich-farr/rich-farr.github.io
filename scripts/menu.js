@@ -9,7 +9,8 @@ var blogs = [
             ['c3-meditation-process', 'Meditation'],
             ['t4-javascript-basics', 'Tech Blog 4'],
             ['c4-daily-mindfulness', 'Daily Mindfulness'],
-            ['c5-self-confidence', 'Self Confidence']
+            ['c5-self-confidence', 'Self Confidence'],
+            ['t5-problem-solving', 'Problem Solving']
             ];
 
   for (var i = 0; i < blogs.length; i++) {

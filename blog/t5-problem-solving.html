@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rich's EDA Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/main.css">
+
+  <script src="../scripts/menu.js" type="text/javascript" async></script>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <a href="../index.html"><div class="twelve columns header">
+        <div id="rotate">
+          <h1>Rich Goes to EDA</h1>
+          <h6>A blog about code, self-actualisation, and failure.</h6>
+        </div>
+      </div></a>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="nine columns content">
+        <h3>May 7th - Problem solving... and a bit about arrays</h3>
+        <h5>All about a time when I got blocked on a simple problem and solved it in an elegant way</h5>
+        <p>
+          This sounds like a job interview question! I always struggle to filter through my junk pile of life events for stuff like this, but wouldn't you know that the best example happened today?
+        </p>
+        <p>
+          As we've progressed through Phase 0 we've slowly built our sites on these very blog pages. The longer that's gone on, the more annoying it's become to have to go through each blog page and add a link every time we write a new one. I knew at some point I'd know enough Javascript to overcome this, and now I know that I do - the link menu to the right of this very post was built using a script I wrote today.
+        </p>
+        <p>
+          I tried a few techniques: some rubber ducky-ing to my wife at the start, followed by a bit of pseudocode. I did a whole lot of just "trying something" (this is my dominant method) with reading errors and console logging thrown in. I did need to google a little bit but I figured it out mostly on my own and I'm pretty pleased about that.
+        </p>
+        <p>
+          I felt like I had a good handle on the problem and what I'd need to do, so I was pretty confident and calm the whole time (unlike with the racer game...). I learnt that my initial idea - while simple - was actually too complex and the solution is very very simple indeed. I'm finding that quite often that's the case.
+        </p>
+        <h5>How I feel about problem solving techniques and process</h5>
+        <ul>
+          <li>
+            <strong>Pseudocode:</strong> I haven't done this much, but I did do it today and it seemed to help. Once I'd laid out my pseudocode I worked out my problem backwards from the end.
+          </li>
+          <li>
+            <strong>Trying something:</strong> This is pretty much my default option, for better or worse. In those worse times, the other techniques will help, I'm sure.
+          </li>
+          <li>
+            <strong>Rubber ducky method:</strong> I've only used this a couple of times, but I think most people are aware of how similar methods can work well in day-to-day life, so I plan to use it more.
+          </li>
+          <li>
+            <strong>Reading error messages:</strong> Where would I be without these! I hate the sight of 'em, but I also love 'em.
+          </li>
+          <li>
+            <strong>Console.logging:</strong> Just getting used to this, but it can be hugely valuable to see the output of your code at any given point.
+          </li>
+          <li>
+            <strong>Googling:</strong> Yeah, I do this <strong>a lot</strong>.
+          </li>
+          <li>
+            <strong>Asking my peers for help:</strong>I've been doing this a bit the last couple of weeks. It's a bit of a handicap having so few people in our cohort, so I'll have to get used to leaning on the others in the code-help-desk channel.
+          </li>
+          <li>
+            <strong>Asking coaches for help:</strong> This is a weakness. I've tended to always rely totally on myself an assume others can't or won't help me. I need to get much better at putting my hand up for teacher.
+          </li>
+          <li>
+            <strong>Improving my process with reflection:</strong> I find myself doing this without really realising I'm doing it. The ironic thing is that this tends to happen when I'm at my least mindful...
+          </li>
+        </ul>
+        <h5>What these functions do</h5>
+        <p>
+          So, my non-technical friends: before we get into this, I should explain what an array is. It's basically an object used to store data, very much like a table or a spreadsheet. They can contain data in the forms of numbers, strings of words, or expressions like true and false. Arrays can have any number of rows and columns and programs can add, remove, and search the data within.
+        </p>
+        <ul>
+          <li>
+            <strong>.map()</strong> takes the values in an existing array and uses a small piece of code called a function to create a new array. The .map() method could be used by a function to take some numbers out of one array, multiply all those numbers by two, and then put the results inside a new array. This is a very basic example.
+          </li>
+          <li>
+            <strong>.filter()</strong> is similar to the .map() method. The difference is that when the function looks through the existing array, it creates the new array only with values that pass a test. Some examples: it may look through some names and return those that start with a particular letter; or it may only return values that are greater than 100. It will then put the values it finds in a new array - it doesn't actually change the values as .map() does.
+          </li>
+          <li>
+            <strong>.reduce()</strong> takes the values in an array and <em>reduces</em> them to a single value. It can do this with numbers by adding them all together (or any calculation that uses more than two values). It can take an array with a bunch of smaller arrays inside it, take the values out of those and turn all of them into one big array. It can also take words inside an array and stick them all together in a bi sentence. The beauty of .reduce() is that it simplifies a lot of the sort of basic coding that spits out a single value anyway.
+          </li>
+        </ul>
+      </div>
+      
+      <div class="three columns sidebar">
+        <div class="links" id="menu">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns footer">
+        <p>
+          (c) FarrOut Design 2016
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
