@@ -10,10 +10,11 @@ var blogs = [
             ['t4-javascript-basics', 'Javascript Basics'],
             ['c4-daily-mindfulness', 'Daily Mindfulness'],
             ['c5-self-confidence', 'Self Confidence'],
-            ['t5-problem-solving', 'Problem Solving']
+            ['t5-problem-solving', 'Problem Solving'],
+            ['t6-js-language', 'Javascript Language']
             ];
 
   for (var i = 0; i < blogs.length; i++) {
-    var menu = '<div class="link"><a href="' + blogs[i][0] + '.html">' + blogs[i][1] + '</a></div>';
-      document.getElementById('menu').innerHTML += menu;
+    var buildLink = '<div class="link"><a href="' + blogs[i][0] + '.html">' + blogs[i][1] + '</a></div>';
+      document.getElementById('menu').innerHTML += buildLink;
   };
