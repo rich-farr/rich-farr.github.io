@@ -11,10 +11,10 @@ var blogs = [
             ['c4-daily-mindfulness', 'Daily Mindfulness'],
             ['c5-self-confidence', 'Self Confidence'],
             ['t5-problem-solving', 'Problem Solving'],
-            ['t6-js-language', 'Javascript Language']
+            ['c6-control', 'Self Regulation']
             ];
 
-  for (var i = 0; i < blogs.length; i++) {
-    var buildLink = '<div class="link"><a href="' + blogs[i][0] + '.html">' + blogs[i][1] + '</a></div>';
-      document.getElementById('menu').innerHTML += buildLink;
-  };
+for (var i = 0; i < blogs.length; i++) {
+var buildLink = '<div class="link"><a href="' + blogs[i][0] + '.html">' + blogs[i][1] + '</a></div>';
+  document.getElementById('menu').innerHTML += buildLink;
+};
