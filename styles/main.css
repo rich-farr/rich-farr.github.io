@@ -142,3 +142,8 @@ a {
 .link:nth-of-type(4n+0) {
   background: #31c5da;
 }
+
+pre {
+  white-space: pre-wrap;
+  tab-size: 2;
+}

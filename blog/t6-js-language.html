@@ -32,7 +32,74 @@
       <div class="nine columns content">
         <h3>How the Javascript Language uses all sorts of weird symbols</h3>
         <p>
-          Here is the actual blog post.
+          So, my technically-challenged friend, you want to know about Javascript syntax and symbols eh? Well, get ready to have your mind blown!
+        </p>
+        <p>
+          <strong>Parentheses</strong> <code>()</code> are for: grouping or containing expressions or parameters. I know right? Geek jargon. It's pretty simple though: expressions are just things like a calculation (4+3) or a comparison (a < 10). Parameters are sometimes what a function needs to run a piece of code: say if it needs two numbers to do a calculation, then the parameters can be those two numbers. See <strong>Figure (a)</strong> below:
+        </p>
+          <pre><code>function myFunc(x,y) {
+  if (x < y) {
+    return x + " is less than " + y;
+  } else return x + ' is greater than ' + y;
+};
+          
+myFunc(3, 7);</code></pre>
+        <p>
+          In this example, the function uses the parameter placeholders x and y in the parentheses at the top, while at the bottom, the parameters are specified as actual numbers inside the parentheses. Those numbers go through the function in place of x and y respectively, so where you see the expression (x < y), the function is figuring out if 3 is less than 7. Neat eh?
+        </p>
+        <p>
+          <strong>Brackets</strong> <code>[]</code> are for building arrays, and for "bracket notation".
+        </p>
+        <p>
+          Arrays store data in a format like a table or spreadsheet, with rows and columns. Check out the basic one shown below in <strong>Figure (b)</strong>, and the function below that:
+        </p>
+          <pre><code>var myArray = [1, 2, 3, 4, 5];
+
+function myLoop = {
+  for (var i = 0; i < myArray.length; i++) {
+    return myArray[i];
+  }
+};
+
+myloop();</code></pre>
+        <p>
+          The variable "myArray" simply contains a few numbers (it's a very basic array). The function below it "loops" through the array and returns the values in it. It does this using a basic form of bracket notation - where it says <code>return myArray[i]</code>, the <code>[i]</code> contains a number based on how many times the loop has run, and grabs a value from a location in the array based on that number. Phew!
+        </p>
+        <p>
+          PS: See Figure (c) below for more on bracket notation.
+        </p>
+        <p>
+          <strong>Curly braces</strong> <code>{}</code> are kind of a big deal. In one instance, they define the start and finish of the actual code that is run as part of your script, as you can see in figures (a) and (b). Each separate bit of code needs to run inside its own set of curly braces, so you will commonly see one set "nested" inside another, and more nested inside that, and so on. It can get confusing, which is why coders need special text editing programs that keep track of where things are.
+        </p>
+        <p>
+          The other use for curly braces is when building Objects. Objects are a bit like arrays - but ON STEROIDS. They contain data in the form of properties and values, and can be written three different ways. <strong>Figure (c)</strong> below shows an Object (with smaller Objects nested inside it):
+        </p>
+          <pre><code>var people = {
+  george: {
+    firstName: "George" 
+  },
+  bob: {
+    firstName: "Bob"    
+  },
+  stan: {
+    firstName: 'Stan'   
+  }
+};
+
+console.log(people.george.firstName);          // => George
+console.log(people["george"].firstName);       // => George
+console.log(people["george"]["firstName"]);    // => George</code></pre>
+        <p>
+          Check out the last three lines in the above example. The first is using "dot" notation to access the properties and values inside the Object. The second is using a mixture of dot and bracket notation, and the third is just using bracket notation. All are legitimate ways of doing it, but brackets can be more flexible because they can contain properties that are formatted unusually - say, if they had spaces in them.
+        </p>
+        <p>
+          <strong>Single Quotes</strong> <code>''</code> and <strong>Double Quotes</strong> <code>""</code> are more or less interchangeable. They are used to contain "strings", which are basically just combinations of letters or numbers that you want the computer to interpret as words or sentences. In Figure (a), you can see two strings: one is using single, and the other is using double quotes.  
+        </p>
+        <p>
+          When using quotes, you need to be consistent: you cannot start a string with a single and end it with a double, and vice versa. You must also "close" a string that you open with quotes - if you don't, your code WILL NOT WORK because it will assume everything after the opening quote is part of the string.
+        </p>
+        <p>
+          Although I said single and double quotes are interchangeable, there's an instance when they aren't. If you're using an online program to check that your Objects are properly laid out, you must use double quotes. Check out the Object in Figure (c) again. A checker would freak out because 'Stan' is in single quotes. 
         </p>
       </div>
       <div class="three columns sidebar">

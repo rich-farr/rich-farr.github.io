@@ -11,7 +11,8 @@ var blogs = [
             ['c4-daily-mindfulness', 'Daily Mindfulness'],
             ['c5-self-confidence', 'Self Confidence'],
             ['t5-problem-solving', 'Problem Solving'],
-            ['c6-control', 'Self Regulation']
+            ['c6-control', 'Self Regulation'],
+            ['t6-js-language', 'Javascript symbols']
             ];
 
 for (var i = 0; i < blogs.length; i++) {
