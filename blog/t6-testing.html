@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rich's EDA Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/main.css">
+
+  <script src="../scripts/menu.js" type="text/javascript" async></script>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <a href="../index.html"><div class="twelve columns header">
+        <div id="rotate">
+          <h1>Rich Goes to EDA</h1>
+          <h6>A blog about code, self-actualisation, and failure.</h6>
+        </div>
+      </div></a>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="nine columns content">
+        <h3>May 26th - Scope, and how it works in Javascript</h3>
+        <p>
+          Scope is a way of describing how a variable can be used. There are two kinds of scope: Global and Local.
+        </p>
+        <p>
+          A variable has <strong>Global</strong> scope if it is declared outside of a function:
+        </p>
+          <pre><code>var globalVar = 123;
+
+function myFunc () {
+  if (globalVar = 123) {
+  alert("Woohoo!");
+  }
+}</code></pre>
+        <p>
+          If it's global, it can be accessed from anywhere in the code. On one hand this is very convenient. On the other, it can be a liability, especially when the code is very complex. This is because it can be hard to keep track of which bits of the code are using the variable. Multiple parts trying to use it concurrently can cause conflicts and the code will not work, or it will behave in a strange manner.
+        </p>
+        <p>
+          <strong>Local</strong> scope is held by a variable that is declared inside a function. 
+        </p>
+          <pre><code>function timesTwo (number) {
+  var localVar = number * 2;
+  alert("The total is " + localVar);
+  }
+
+timesTwo(7);</code></pre>
+        <p>
+          If a variable is local it is only accessible inside of that function. This avoids conflicts like that described above, but it also means that a potentially useful variable can't be used elsewhere.
+        </p>
+        <p>
+          Variables that are declared inside a "nested" function (that's a function inside another function) are local only to the function they reside in. They are not accessible by the 'grandparent' function.
+        </p>
+        <p>
+          <strong>Hoisting</strong> is a concept that is affected by scope. It means that a variable can declared <em>below</em> code of the same scope where it has already been used - it is as if the variable was declared at the very top of the code and is used afterward. This is important because code is executed from top to bottom.
+        </p>
+          <pre><code>x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;                     // Display x in the element
+
+var x; // Declare x</code></pre>
+        <p>
+          Hoisting only affects variable declarations, not initialisations. In the example above, the variable is being declared at the bottom and initialised (given a value) at the top. In the example below, the variable <em>y</em> is initialised below the code: this will not work because the code cannot know the value of <em>y</em>:
+        </p>
+          <pre><code>var x = 5; // Initialize x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x + " " + y;           // Display x and y
+
+var y = 7; // Initialize y</code></pre>        
+        <p>
+          Hoisting is often overlooked by developers and can lead to bugs in software. It is best practice to always declare variables at the beginning of code for this reason. 
+        </p>
+      </div>
+      <div class="three columns sidebar">
+        <div class="links" id="menu">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns footer">
+        <p>
+          (c) FarrOut Design 2016
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
