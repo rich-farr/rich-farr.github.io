@@ -14,7 +14,8 @@ var blogs = [
             ['c6-control', 'Self Regulation'],
             ['t6-js-language', 'Javascript Language'],
             ['c7-motivation', 'Motivation'],
-            ['t6-testing', 'Javascript Scope']
+            ['t6-testing', 'Javascript Scope'],
+            ['c8-connecting', 'Connecting']
             ];
 
 for (var i = 0; i < blogs.length; i++) {
